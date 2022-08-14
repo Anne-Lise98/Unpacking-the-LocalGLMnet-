@@ -1,0 +1,8 @@
+#We define two loss functions: the Poisson deviance loss function as well as the square loss function. 
+
+Poissondeviance <- function(y_true, y_pred){
+  dev <- sum(y_pred) - sum(y_true) + sum(log((y_true/y_pred)^(y_true)))
+  return(dev*(2/length(y_pred)))
+}
+
+square_loss <- function(y_true, y_pred){mean((y_true-y_pred)^2)}
