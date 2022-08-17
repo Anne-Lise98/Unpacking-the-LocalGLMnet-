@@ -14,18 +14,20 @@ As the thesis is accompanied by various R files, the order to run the files, mak
 
 5. Run plot_freq.R. In this file, a function generating plots for the frequency obtained by a model is defined.
 
-6. Run GLM.R. A generalized linear model is fitted on the learning data. After this, the number of claims on the testing data is estimated and a likelihood ratio test is considered. 
+6. Run Loss_functions.R. In this file, the Poisson deviance loss function as well as the square loss function are defined.
 
-7. Run keras_plot_loss_min.R. In this file, a function generating plots for the validation and training loss for the neural networks and LocalGLMnets is determined. These plots indicate the epoch at which we obtain the smallest validation loss.
+7. Run GLM.R. A generalized linear model is fitted on the learning data. After this, the number of claims on the testing data is estimated and a likelihood ratio test is considered. 
 
-8. Run Neural Networks.R. Various neural networks to predict the number of claims are computed. 
+8. Run keras_plot_loss_min.R. In this file, a function generating plots for the validation and training loss for the neural networks and LocalGLMnets is determined. These plots indicate the epoch at which we obtain the smallest validation loss.
 
-9. Run covariatecontributions.R. In this file, a function plotting the covariate contributions for the continuous covariates for a LocalGLMnet is determined.
+9. Run Neural Networks.R. Various neural networks to predict the number of claims are computed. 
 
-10. Run covariatecontributions_binary.R. In this file, a function plotting the covariate contributions for the binary covariates for a LocalGLMnet is determined.
+10. Run covariatecontributions.R. In this file, a function plotting the covariate contributions for the continuous covariates for a LocalGLMnet is determined.
 
-11. Run regressionattention.R. This function plots the regression attentions with the corresponding coverage ratio area for the binary and continuous covariates.
+11. Run covariatecontributions_binary.R. In this file, a function plotting the covariate contributions for the binary covariates for a LocalGLMnet is determined.
 
-12. Run LocalGLMnet.R. Various LocalGLMnets are computed. Moreover, the various covariates are analysed.
+12. Run regressionattention.R. This function plots the regression attentions with the corresponding coverage ratio area for the binary and continuous covariates.
+
+13. Run LocalGLMnet.R. Various LocalGLMnets are computed. Moreover, the various covariates are analysed.
 
 
